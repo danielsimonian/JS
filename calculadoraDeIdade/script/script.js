@@ -44,6 +44,4 @@ function calculaIdade(){
             img.src = 'img/idosa.jpeg'
         }
     }
-
-
 }
