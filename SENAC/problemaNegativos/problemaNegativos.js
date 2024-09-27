@@ -13,9 +13,14 @@ function criarCampos(){
 }
 
 function soma(){
-    let numero = document.getElementsByClassName("numero").length
-    console.log(numero)
-    
+    let qntSoma = document.getElementsByClassName("numero").length
+    let soma = 0
+    for(let i = 0; i < qntSoma; i++){
+        let numeroSomado = document.getElementById("numero" + i).value
+        soma = soma + numeroSomado
+
+        console.log(soma)
+    }
     
 }
 
