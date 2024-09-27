@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <script src="./problemaNegativos.js"></script>
     <title>problemaNegativos</title>
 </head>
 <body>
     <main>
-        <label for="quantidadeNumeros">Quantos números você irá digitar?</label>
-        <input type="number" name="" id="quantidadeNumeros">
-        <input onclick="criarCampos()" type="button" value="OK">
-        <input onclick="" type="button" value="Limpar Campos">
-        <input onclick="soma()" type="button" value="Gerar soma">
-        <div id="digiteNumero">
+        <section class="botoes">
+            <div>
+                <input type="number" name="" id="quantidadeNumeros" placeholder="Digite a quantidade de números" class="insira">
+                <input onclick="criarCampos()" type="button" value="OK" class="botaoOK">
+            </div>
+            <div>
+                <input onclick="location.reload()" type="button" value="Limpar Campos" class="botao">
+                <input onclick="soma()" type="button" value="Gerar soma" class="botao">
+            </div>
+        </section>
+        <section class="numerosSomados">
+            <div id="digiteNumero">
             
-        </div>
-        
+            </div>
+        </section>
+        <section>
+            <div id="resultado">
+            </div>
+        </section>
     </main>
 </body>
 </html>
