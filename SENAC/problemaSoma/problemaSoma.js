@@ -16,15 +16,23 @@ function criarCampos(){
         }
 }
 
+let resultado = ""
+
 function soma(){
+
+    if(resultado != ""){
+        resultado = document.getElementById('resultado')
+        resultado.innerHTML = ""
+    }
+
     let qntSoma = document.getElementsByClassName("numero").length
     let soma = 0
 
     for(let i = 0; i < qntSoma; i++){
         let numeroSomado = parseInt(document.getElementById("numero" + i).value)
-        soma = soma + numeroSomado
+        soma += numeroSomado
     }
-
-    let resultado = document.getElementById('resultado')
-    resultado.innerHTML += `<h3>A soma é ${soma}</h3>` 
+    
+    resultado = document.getElementById('resultado')
+    resultado.innerHTML += `<h3>A soma é ${soma}</h3>`   
 }
